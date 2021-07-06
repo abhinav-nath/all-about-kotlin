@@ -32,4 +32,11 @@ fun main() {
     var number = 10
     number = 20
 
+    // type is fixed at declaration time
+    // once a variable is declared with a type of data
+    // after that the type cannot be changed
+    var num = 100
+    // num = "hundred" -> compilation error
+    // Type mismatch. Required: Int Found: String
+
 }
