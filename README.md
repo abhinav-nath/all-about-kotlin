@@ -24,3 +24,20 @@ Development lead Andrey Breslav mentioned that the team decided to name it after
 
 * Kotlin compiles the code to a bytecode which can be executed in the JVM.
   Thus, all the libraries and frameworks made in Java transfer and run in a Kotlin project.
+  
+## How does Kotlin work?
+
+* When we compile a Kotlin program, the Kotlin compiler - _kotlinc_ compiles the .kt file
+ and generates bytecode as .class file.
+ 
+
+* At this point .class files are equivalent to Java .class files and the JVM can now run them.
+
+
+* However, when running Kotlin applications, you need the Kotlin runtime library, in addition to the JRE.
+So, the Kotlin compiler compiles the .kt files into .class files, which contain bytecode.
+The .class files can be run on the JVM exactly like class files generated from Java code.
+  
+
+* When distributing a Kotlin application, you have to distribute the Kotlin runtime library and the JRE.
+Otherwise the application won't run.
