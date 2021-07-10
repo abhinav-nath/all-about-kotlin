@@ -67,3 +67,28 @@
     ```
     val employee = Employee()
     ```
+
+11. In Kotlin, the `==` operator compares the contents of two objects
+
+   * In Java, `==` compares two references, and the contents of two objects are compared using the `equals()` method.
+
+   * In Kotlin `==` and `equals()` method do the same thing i.e. compare the contents of two objects.
+
+   * Kotlin compares two references with the `===` operator
+
+   ```
+   val employee1 = Employee("John", 35)
+   val employee2 = Employee("Tim", 28)
+   val employee3 = Employee(John", 35)
+
+   // Kotlin
+   println(employee1 == employee3)       // true
+   println(employee1.equals(employee3))  // true
+
+   println(employee1 == employee2)       // false
+   println(employee1 === employee3)      // false
+
+   // Java
+   System.out.println(employee1 == employee3)       // false
+   System.out.println(employee1.equals(employee3))  // true
+   ```
