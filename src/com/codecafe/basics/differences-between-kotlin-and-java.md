@@ -64,34 +64,101 @@
 
 10. There is no `new` keyword in Kotlin
 
-    ```
-    val employee = Employee()
-    ```
+       ```
+       val employee = Employee()
+       ```
 
 11. In Kotlin, the `==` operator compares the contents of two objects
 
-   * In Java, `==` compares two references, and the contents of two objects are compared using the `equals()` method.
+    * In Java, `==` compares two references, and the contents of two objects are compared using the `equals()` method.
 
-   * In Kotlin `==` and `equals()` method do the same thing i.e., compare the contents of two objects.
+    * In Kotlin `==` and `equals()` method do the same thing i.e., compare the contents of two objects.
 
-   * Kotlin compares two references with the `===` operator
+    * Kotlin compares two references with the `===` operator
 
-   ```
-   val employee1 = Employee("John", 35)
-   val employee2 = Employee("Tim", 28)
-   val employee3 = Employee(John", 35)
-   val employee4 = employee1
+      ```
+      val employee1 = Employee("John", 35)
+      val employee2 = Employee("Tim", 28)
+      val employee3 = Employee(John", 35)
+      val employee4 = employee1
+   
+      // Kotlin
+      println(employee1 == employee3)       // true
+      println(employee1.equals(employee3))  // true
+   
+      println(employee1 == employee2)       // false
+      println(employee1 === employee3)      // false
+      println(employee1 === employee4)      // true
+   
+      // Java
+      System.out.println(employee1 == employee3)       // false
+      System.out.println(employee1.equals(employee3))  // true
+      System.out.println(employee1 == employee4)       // true
+      ```
 
-   // Kotlin
-   println(employee1 == employee3)       // true
-   println(employee1.equals(employee3))  // true
+12. Difference in Bitwise operators
+   
+    * In Java the bitwise operators are like below:
+   
+      `x | y`
+   
+      `x & y`
 
-   println(employee1 == employee2)       // false
-   println(employee1 === employee3)      // false
-   println(employee1 === employee4)      // true
+    * But in Kotlin, we spell them out:
 
-   // Java
-   System.out.println(employee1 == employee3)       // false
-   System.out.println(employee1.equals(employee3))  // true
-   System.out.println(employee1 == employee4)       // true
-   ```
+      `x or y`
+
+      `x and y`
+
+      `x xor y`
+
+
+13. Difference in Type Checking and Type Casting
+
+    * In Java, we check the type of any instance using the `instanceof` keyword.
+      ```
+      if (obj instanceof Employee) {
+         // do something
+      }
+      ```
+    * In Kotlin, we check the type of any instance using the `is` keyword.
+      ```
+      if (obj is Employee) {
+         // do something
+      }
+      ```
+      or
+      ```
+      if (obj !is Employee) {
+         // do something
+      }
+      ```
+    * In Java, we cast an instance to another type like this:
+      ```
+      (Employee) obj;
+      ```
+    * In Kotlin, type casting is done using the `as` keyword:
+      ```
+      if (obj is Employee) {
+         val newEmployee = obj as Employee
+         println(newEmployee.name)
+      }
+      ```
+    * Here is a little magic, _type casting is not really necessary in Kotlin_ !
+      As soon as we do a `is` check, Kotlin proactively casts the object automatically for us (under the hood).
+      So we don't need to do the type casting manually which is Awesome !
+
+      Hence, we can simply write the code like this:
+      ```
+      if (obj is Employee) {
+         println(newEmployee.name)
+      }
+      ```
+    * Kotlin does a **Smart Casting** for us.
+
+
+14. String Templates and Raw Strings in Kotlin
+
+     * These are some cool features of Kotlin which are absent in Java.
+     * These features are explained here:
+        
