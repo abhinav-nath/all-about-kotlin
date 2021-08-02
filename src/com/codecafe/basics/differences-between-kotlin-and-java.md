@@ -160,5 +160,4 @@
 14. String Templates and Raw Strings in Kotlin
 
      * These are some cool features of Kotlin which are absent in Java.
-     * These features are explained here:
-        
+     * [String Templates](https://github.com/abhinav-nath/all-about-kotlin/blob/master/src/com/codecafe/basics/stringtemplates/string-templates.md "String Templates in Kotlin") | [Code](https://github.com/abhinav-nath/all-about-kotlin/tree/master/src/com/codecafe/basics/stringtemplates "Code Examples")
