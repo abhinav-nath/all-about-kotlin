@@ -73,4 +73,7 @@ fun main() {
     val onVacation = DummyJavaClass().isVacationTime(vacationTime)
     println("onVacation : $onVacation")
 
+    // This is supported because
+    // Kotlin data-type classes compile to primitive types under the cover
+
 }

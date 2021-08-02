@@ -8,7 +8,7 @@ fun main() {
     val e4 = e1
 
     // === checks for referential equality
-    // == and equals() checks for structural equality
+    // == and equals() checks for structural equality, it is translated into a call to equals() method
 
     println(e1 === e2)       // false
     println(e1 === e3)       // false

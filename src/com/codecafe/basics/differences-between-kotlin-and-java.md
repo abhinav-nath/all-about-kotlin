@@ -174,4 +174,19 @@
     - There are no primitive (lowercase) data types in Kotlin like those in Java.
     - _Auto-widening_ of numeric data types is not supported in Kotlin.
     - We cannot treat chars as integers in Kotlin.
-    - [Code example](https://dummyurl.xyz "Datatypes in Kotlin")
+    - [Code example](https://github.com/abhinav-nath/all-about-kotlin/tree/master/src/com/codecafe/basics/datatypes "Datatypes in Kotlin")
+
+
+17. In Java, the `Object` class is the base class of all classes.
+    In Kotlin, the `Any` class is the root of the Kotlin class hierarchy.
+    Every Kotlin class has `Any` as a superclass.
+
+    Like Java's `Object` class, the `Any` class of Kotlin contains these three elemental methods:
+    1. equals()
+    2. hashCode()
+    3. toString()
+
+
+18. The `Nothing` class of Kotlin has no equivalent present in Java.
+
+    Fun fact is that `Nothing` class is the sub-class of every class in Kotlin.
