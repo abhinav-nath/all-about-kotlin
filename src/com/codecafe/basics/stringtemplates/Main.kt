@@ -36,4 +36,16 @@ fun main() {
 
     println(msg) // -5 is negative and odd
 
+    println()
+
+    // raw string
+    println(
+        """raw string:
+             |    1
+             |   11
+             |  111
+             | 1111
+    """.trimMargin("|")
+    )
+
 }

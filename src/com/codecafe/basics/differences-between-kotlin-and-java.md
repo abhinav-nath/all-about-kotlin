@@ -168,3 +168,10 @@
     We cannot do that in jshell.
     - Activate REPL in IntelliJ:
     - `Tools -> Kotlin -> Kotlin REPL`
+
+
+16. All the Kotlin data types are same as Java's except for few differences:
+    - There are no primitive (lowercase) data types in Kotlin like those in Java.
+    - _Auto-widening_ of numeric data types is not supported in Kotlin.
+    - We cannot treat chars as integers in Kotlin.
+    - [Code example](https://dummyurl.xyz "Datatypes in Kotlin")
