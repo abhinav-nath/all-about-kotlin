@@ -174,7 +174,7 @@
     - There are no primitive (lowercase) data types in Kotlin like those in Java.
     - _Auto-widening_ of numeric data types is not supported in Kotlin.
     - We cannot treat chars as integers in Kotlin.
-    - [Code example](https://github.com/abhinav-nath/all-about-kotlin/tree/master/src/com/codecafe/basics/datatypes "Datatypes in Kotlin")
+    - [Code example](https://github.com/abhinav-nath/all-about-kotlin/blob/master/src/com/codecafe/basics/datatypes/Datatypes.kt "Datatypes in Kotlin")
 
 
 17. In Java, the `Object` class is the base class of all classes.
