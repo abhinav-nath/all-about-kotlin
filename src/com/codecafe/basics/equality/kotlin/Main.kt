@@ -17,4 +17,12 @@ fun main() {
     println(e1 == e3)        // true
     println(e1 === e4)       // true
 
+    // Kotlin uses same JVM optimization for Strings as Java
+    var hello1 = "Hello"
+    var hello2 = "Hello"
+
+    println("hello1 is referentially equal to hello2 : ${hello1 === hello2}")    // true
+
+    println("hello1 is structurally equal to hello2 : ${hello1 == hello2}")      // true
+
 }
