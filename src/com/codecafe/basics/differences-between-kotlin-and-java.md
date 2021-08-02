@@ -160,7 +160,7 @@
 14. String Templates and Raw Strings in Kotlin
 
      * These are some cool features of Kotlin which are absent in Java.
-     * [String Templates](https://github.com/abhinav-nath/all-about-kotlin/blob/master/src/com/codecafe/basics/stringtemplates/string-templates.md "String Templates in Kotlin") | [Code](https://github.com/abhinav-nath/all-about-kotlin/tree/master/src/com/codecafe/basics/stringtemplates "Code Examples")
+     * [String Templates](./stringtemplates/string-templates.md "String Templates in Kotlin") | [Code](./stringtemplates "Code Examples")
 
 
 15. Kotlin has another cool feature `REPL (Read Eval Print Loop)`. It lets us run Kotlin snippets in CLI.
@@ -174,7 +174,7 @@
     - There are no primitive (lowercase) data types in Kotlin like those in Java.
     - _Auto-widening_ of numeric data types is not supported in Kotlin.
     - We cannot treat chars as integers in Kotlin.
-    - [Code example](https://github.com/abhinav-nath/all-about-kotlin/blob/master/src/com/codecafe/basics/datatypes/Datatypes.kt "Datatypes in Kotlin")
+    - [Code example](./datatypes/Datatypes.kt "Datatypes in Kotlin")
 
 
 17. In Java, the `Object` class is the base class of all classes.
