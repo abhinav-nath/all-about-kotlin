@@ -161,3 +161,10 @@
 
      * These are some cool features of Kotlin which are absent in Java.
      * [String Templates](https://github.com/abhinav-nath/all-about-kotlin/blob/master/src/com/codecafe/basics/stringtemplates/string-templates.md "String Templates in Kotlin") | [Code](https://github.com/abhinav-nath/all-about-kotlin/tree/master/src/com/codecafe/basics/stringtemplates "Code Examples")
+
+
+15. Kotlin has another cool feature `REPL (Read Eval Print Loop)`. It lets us run Kotlin snippets in CLI.
+    It is similar to `jshell` of Java but REPL knows about the definitions in our project as well, so we can use the components of our project.
+    We cannot do that in jshell.
+    - Activate REPL in IntelliJ:
+    - `Tools -> Kotlin -> Kotlin REPL`
