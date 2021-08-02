@@ -14,7 +14,7 @@ The name comes from _Kotlin Island_, near St. Petersburg.
 
 Development lead Andrey Breslav mentioned that the team decided to name it after an island, just like Java was named after the Indonesian island of Java (though the programming language Java was perhaps named after the coffee).
 
-[Hello World in Kotlin](https://github.com/abhinav-nath/all-about-kotlin/blob/master/src/com/codecafe/basics/HelloWorld.kt "Hello World")
+[Hello World in Kotlin](./src/com/codecafe/basics/HelloWorld.kt "Hello World")
 
 ## Is Kotlin better than Java?
 
@@ -27,7 +27,7 @@ Development lead Andrey Breslav mentioned that the team decided to name it after
 * Kotlin compiles the code to a bytecode which can be executed in the JVM.
   Thus, all the libraries and frameworks made in Java transfer and run in a Kotlin project.
 
-* [Differences between Kotlin and Java](https://github.com/abhinav-nath/all-about-kotlin/blob/master/src/com/codecafe/basics/differences-between-kotlin-and-java.md "Differences between Kotlin and Java")
+* [Differences between Kotlin and Java](./src/com/codecafe/basics/differences-between-kotlin-and-java.md "Differences between Kotlin and Java")
   
 ## How does Kotlin work?
 
