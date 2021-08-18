@@ -14,8 +14,8 @@ The resulting String is contained between two consecutive non-overlapping occurr
 
 For example, in Java, in order to create properly a String containing a Windows-style file path to a resource located at `C:\Repository\read.me`, we define it in this way:
 
-```kotlin
-String path = "C:\\Repository\\read.me"
+```java
+String path = "C:\\Repository\\read.me";
 ```
 
 In Kotlin, we may use the triple-quoted notation in order to achieve the same result:
