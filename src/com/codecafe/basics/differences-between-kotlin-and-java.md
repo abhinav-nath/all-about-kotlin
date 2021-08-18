@@ -79,7 +79,7 @@
       ```kotlin
       val employee1 = Employee("John", 35)
       val employee2 = Employee("Tim", 28)
-      val employee3 = Employee(John", 35)
+      val employee3 = Employee("John", 35)
       val employee4 = employee1
    
       // Kotlin
