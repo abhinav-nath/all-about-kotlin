@@ -14,26 +14,26 @@ The resulting String is contained between two consecutive non-overlapping occurr
 
 For example, in Java, in order to create properly a String containing a Windows-style file path to a resource located at `C:\Repository\read.me`, we define it in this way:
 
-```
+```kotlin
 String path = "C:\\Repository\\read.me"
 ```
 
 In Kotlin, we may use the triple-quoted notation in order to achieve the same result:
 
-```
+```kotlin
 val path = """C:\Repository\read.me"""
 ```
 
 We may use this notation in order to create a multi-line String:
 
-```
+```kotlin
 val receipt = """Item 1: $1.00
 Item 2: $0.50"""
 ```
 
 Which creates a String that spans exactly two lines. If we prefer this indentation:
 
-```
+```kotlin
 val receipt = """Item 1: $1.00
 >Item 2: $0.50""".trimMargin(">") 
 ```
@@ -42,7 +42,7 @@ We use a `trimMargin()` method that eliminates eventual white spaces from the st
 
 Triple-quoted strings don’t support any escape sequences. It means that if we wrote
 
-```
+```kotlin
 val receipt = """Item 1: $1.00\nItem 2: $0.50"""
 ```
 
@@ -53,6 +53,6 @@ Triple-quoted Strings do support templating though.
 It means that any sequence starting with the dollar sign gets resolved to a string in a way as we have described in the previous section.
 We may use this fact in order to make the escape characters work:
 
-```
+```kotlin
 val receipt = """Item 1: $1.00${"\n"}Item 2: $0.50"""
 ```
