@@ -21,9 +21,9 @@
 
 
 4. In Kotlin, square brackets can be used to access any index of a Collection:
-    ```
-    val names = arrayListOf("Apple", "Banana", "Mango")  
-    println(names[1])
+   ```kotlin
+   val names = arrayListOf("Apple", "Banana", "Mango")  
+   println(names[1])
    ```
 
 5.  Kotlin has its own `String` class
@@ -44,10 +44,10 @@
 
 
 8. Original for loop does not exist in Kotlin
-    ```
-    for(i = 0; i < 10; i++) {
-        // do something 
-    }
+   ```kotlin
+   for(i = 0; i < 10; i++) {
+       // do something 
+   }
    ```
 
 
@@ -63,10 +63,10 @@
 
 
 10. There is no `new` keyword in Kotlin
+    ```kotlin
+    val employee = Employee()
+    ```
 
-       ```
-       val employee = Employee()
-       ```
 
 11. In Kotlin, the `==` operator compares the contents of two objects
 
@@ -76,7 +76,7 @@
 
     * Kotlin compares two references with the `===` operator
 
-      ```
+      ```kotlin
       val employee1 = Employee("John", 35)
       val employee2 = Employee("Tim", 28)
       val employee3 = Employee(John", 35)
@@ -89,7 +89,9 @@
       println(employee1 == employee2)       // false
       println(employee1 === employee3)      // false
       println(employee1 === employee4)      // true
+      ```
    
+      ```java
       // Java
       System.out.println(employee1 == employee3)       // false
       System.out.println(employee1.equals(employee3))  // true
@@ -100,45 +102,55 @@
    
     * In Java the bitwise operators are like below:
    
-      `x | y`
+      ```java
+      x | y
+      ```
    
-      `x & y`
+      ```java
+      x & y
+      ```
 
     * But in Kotlin, we spell them out:
 
-      `x or y`
+      ```kotlin
+      x or y
+      ```
 
-      `x and y`
+      ```kotlin
+      x and y
+      ```
 
-      `x xor y`
+      ```kotlin
+      x xor y
+      ```
 
 
 13. Difference in Type Checking and Type Casting
 
     * In Java, we check the type of any instance using the `instanceof` keyword.
-      ```
+      ```java
       if (obj instanceof Employee) {
          // do something
       }
       ```
     * In Kotlin, we check the type of any instance using the `is` keyword.
-      ```
+      ```kotlin
       if (obj is Employee) {
          // do something
       }
       ```
       or
-      ```
+      ```kotlin
       if (obj !is Employee) {
          // do something
       }
       ```
     * In Java, we cast an instance to another type like this:
-      ```
+      ```java
       (Employee) obj;
       ```
     * In Kotlin, type casting is done using the `as` keyword:
-      ```
+      ```kotlin
       if (obj is Employee) {
          val newEmployee = obj as Employee
          println(newEmployee.name)
@@ -149,7 +161,7 @@
       So we don't need to do the type casting manually which is Awesome !
 
       Hence, we can simply write the code like this:
-      ```
+      ```kotlin
       if (obj is Employee) {
          println(newEmployee.name)
       }
